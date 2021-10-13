@@ -20,18 +20,23 @@ public class GroupE_FruitSalad {
         if (peach.getPeachWeight() < 0 || sapodilla.getSapodillaWeight() < 0 || tangerine.getTangerineWeight() < 0 || blueberry.getBlueberryWeight() < 0) {
             System.out.println("Please, enter the number, which is more or equals 0");
         }
-        System.out.println("Thank you for your order! Your fruit salad is ready. Total weight of your salad is " + amount + "\n Ingredients:");
-        if (peach.getPeachWeight() > 0) {
-            System.out.println("Sapodilla");
+        if (amount == 0) {
+            System.out.println("Your salad is empty because you have not ordered any of fruits");
         }
-        if (sapodilla.getSapodillaWeight() > 0) {
-            System.out.println("Peach");
-        }
-        if (tangerine.getTangerineWeight() > 0) {
-            System.out.println("Tangerine");
-        }
-        if (blueberry.getBlueberryWeight() > 0) {
-            System.out.println("Blueberry");
-        }
+            else {
+                System.out.println("Thank you for your order! Your fruit salad is ready. Total weight of your salad is " + amount + "\n Ingredients:");
+                if (peach.getPeachWeight() > 0) {
+                    System.out.println("Peach");
+                }
+                if (sapodilla.getSapodillaWeight() > 0) {
+                    System.out.println("Sapodilla");
+                }
+                if (tangerine.getTangerineWeight() > 0) {
+                    System.out.println("Tangerine");
+                }
+                if (blueberry.getBlueberryWeight() > 0) {
+                    System.out.println("Blueberry");
+                }
+            }
     }
 }
