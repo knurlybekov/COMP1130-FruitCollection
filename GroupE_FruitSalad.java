@@ -7,17 +7,17 @@ public class GroupE_FruitSalad {
         Peach peach = new Peach();
         Sapodilla sapodilla = new Sapodilla();
         Tangerine tangerine = new Tangerine();
-        Blueberry blueberry = new Blueberry();
+        BlueBerry blueberry = new BlueBerry();
         System.out.println("Welcome to Team E Fruit Salad Maker. \n Please enter how many grams of Peach do you want in your salad?");
         peach.setPeachWeight(scan.nextDouble());
         System.out.println("Alright, and how much grams of Sapodilla do you want in your salad?");
-        sapodilla.setSapodillaWeight(scan.nextDouble());
+        sapodilla.setWeight(scan.nextDouble());
         System.out.println("We got you pal, and how much grams of Tangerine do you want in your salad?");
         tangerine.setTangerineWeight(scan.nextDouble());
         System.out.println("Excellent, and how much grams of Blueberry do you want in your salad?");
-        blueberry.setBlueberryWeight(scan.nextDouble());
-        double amount = peach.getPeachWeight() + sapodilla.getSapodillaWeight() + tangerine.getTangerineWeight() + blueberry.getBlueberryWeight();
-        if (peach.getPeachWeight() < 0 || sapodilla.getSapodillaWeight() < 0 || tangerine.getTangerineWeight() < 0 || blueberry.getBlueberryWeight() < 0) {
+        blueberry.setBlueBerryWeight(scan.nextDouble());
+        double amount = peach.getPeachWeight() + sapodilla.getWeight() + tangerine.getTangerineWeight() + blueberry.getBlueBerryWeight();
+        if (peach.getPeachWeight() < 0 || sapodilla.getWeight() < 0 || tangerine.getTangerineWeight() < 0 || blueberry.getBlueBerryWeight() < 0) {
             System.out.println("Please, enter the number, which is more or equals 0");
         }
         if (amount == 0) {
@@ -28,13 +28,13 @@ public class GroupE_FruitSalad {
                 if (peach.getPeachWeight() > 0) {
                     System.out.println("Peach");
                 }
-                if (sapodilla.getSapodillaWeight() > 0) {
+                if (sapodilla.getWeight() > 0) {
                     System.out.println("Sapodilla");
                 }
                 if (tangerine.getTangerineWeight() > 0) {
                     System.out.println("Tangerine");
                 }
-                if (blueberry.getBlueberryWeight() > 0) {
+                if (blueberry.getBlueBerryWeight() > 0) {
                     System.out.println("Blueberry");
                 }
             }
