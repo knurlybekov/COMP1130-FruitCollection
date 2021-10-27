@@ -2,14 +2,17 @@ package com.company;
 import java.util.Scanner;
 
 public class GroupE_FruitSalad {
+    enum Topping { //
+        WHIPPED_CREAM, CHOCOLATE, LEMON_JUICE
+    }
     public static void main(String[] args) {
         String userInput = "";
         boolean run;
         int total = 0;
         Scanner scan = new Scanner(System.in);
-        System.out.println("Do you want to a salad?  Y or N");
+        System.out.println("Do you want a salad?  Y or N");
         userInput = scan.next();
-        while (!userInput.matches("[YyNn]")){
+        while (!userInput.matches("[YyNn]")){  // Karen and Nikolay
             System.out.println("Incorrect input");
             run = true;
             userInput = scan.next();
@@ -23,7 +26,7 @@ public class GroupE_FruitSalad {
                 System.exit(0);
             }
         }
-        while (run = true) {
+        while (run = true) { // Karen and Nikolay
             Peach peach = new Peach();
             Sapodilla sapodilla = new Sapodilla();
             Tangerine tangerine = new Tangerine();
@@ -56,6 +59,22 @@ public class GroupE_FruitSalad {
                 if (blueberry.getBlueBerryWeight() > 0) {
                     System.out.println("Blueberry");
                 }
+                System.out.println("\n\n-------- Choose Your Toppings --------");
+                System.out.println("\nPress 1. WHIPPED CREAM | 2. CHOCHOLATE | 3. LEMON JUICE  | 4. NO TOPPING : ");
+                int toppings = scan.nextInt();
+                switch (toppings){ //
+                    case 1:
+                        System.out.println("Your Toppings: " + Topping.WHIPPED_CREAM);
+                        break;
+                    case 2:
+                        System.out.println("Your Toppings: " + Topping.CHOCOLATE);
+                        break;
+                    case 3:
+                        System.out.println("Your Toppings: " + Topping.LEMON_JUICE);
+                        break;
+                    case 4:
+                        System.out.println("Toppings: " + "Huh! No Toppings Selected :(");
+                }
                 total += 1;
                 System.out.println("Do you want to order another salad?  Y or N");
                 userInput = scan.next();
@@ -63,18 +82,15 @@ public class GroupE_FruitSalad {
                     System.out.println("Incorrect input");
                     userInput = scan.next();
                 }
-
                 // User does not want more actions
                 if(userInput.matches("[Nn]")){
                     System.out.println("You placed "+ total+" orders. Thakn you!" );
                     System.out.println("Do you wish to exit the program? [Y/Any other key]");
                     String choice = scan.next();
-
                     // Stop the program
                     if (choice.toLowerCase().equals("y"))
                         run = false;
                     System.exit(0);
-
                 }
             }
         }
