@@ -2,7 +2,7 @@ package com.company;
 import java.util.Scanner;
 
 public class GroupE_FruitSalad {
-    enum Topping { //
+    enum Topping { //  Om
         WHIPPED_CREAM, CHOCOLATE, LEMON_JUICE
     }
     public static void main(String[] args) {
@@ -62,7 +62,7 @@ public class GroupE_FruitSalad {
                 System.out.println("\n\n-------- Choose Your Toppings --------");
                 System.out.println("\nPress 1. WHIPPED CREAM | 2. CHOCHOLATE | 3. LEMON JUICE  | 4. NO TOPPING : ");
                 int toppings = scan.nextInt();
-                switch (toppings){ //
+                switch (toppings){ // Om
                     case 1:
                         System.out.println("Your Toppings: " + Topping.WHIPPED_CREAM);
                         break;
