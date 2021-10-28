@@ -74,6 +74,10 @@ public class GroupE_FruitSalad {
                         break;
                     case 4:
                         System.out.println("Toppings: " + "Huh! No Toppings Selected :(");
+                        break;
+                    default:
+                        System.out.println("Error");
+                        break;
                 }
                 total += 1;
                 System.out.println("Do you want to order another salad?  Y or N");
