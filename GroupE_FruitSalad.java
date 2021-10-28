@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class GroupE_FruitSalad {
     enum Topping { //  Om
         WHIPPED_CREAM, CHOCOLATE, LEMON_JUICE
-    }
+    } // Deva
     public static void main(String[] args) {
         String userInput = "";
         boolean run;
@@ -59,7 +59,7 @@ public class GroupE_FruitSalad {
                 if (blueberry.getBlueBerryWeight() > 0) {
                     System.out.println("Blueberry");
                 }
-                System.out.println("\n\n-------- Choose Your Toppings --------");
+                System.out.println("\n\n-------- Choose Your Toppings --------"); // Deva
                 System.out.println("\nPress 1. WHIPPED CREAM | 2. CHOCHOLATE | 3. LEMON JUICE  | 4. NO TOPPING : ");
                 int toppings = scan.nextInt();
                 switch (toppings){ // Om
