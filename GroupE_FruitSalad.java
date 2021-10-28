@@ -62,7 +62,7 @@ public class GroupE_FruitSalad {
                 System.out.println("\n\n-------- Choose Your Toppings --------"); // Deva
                 System.out.println("\nPress 1. WHIPPED CREAM | 2. CHOCHOLATE | 3. LEMON JUICE  | 4. NO TOPPING : ");
                 int toppings = scan.nextInt();
-                switch (toppings){ // Om
+                switch (toppings){ // Om and Deva
                     case 1:
                         System.out.println("Your Toppings: " + Topping.WHIPPED_CREAM);
                         break;
